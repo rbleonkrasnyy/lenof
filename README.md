@@ -2,7 +2,7 @@
 
 ## How to use
 
-See [tree/master/examples](Examples).
+See [examples](tree/master/examples).
 
 ## Clone this repo
 
