@@ -1,8 +1,12 @@
-// lenofd v1.0
+/*
+ * lenOf v1.1
+ *
+ * Copyright (c) 2022 Leonid Krasovsky
+ */
 
 function lenOf (data = undefined) {
     if (typeof data == 'boolean' || typeof data == 'function' || data == undefined) {
-        throw Error(`The data doesn't have length, cause it's ${typeof data}`);
+        throw Error(`The data has no length`);
         return;
     }
 
@@ -29,4 +33,6 @@ function lenOf (data = undefined) {
     return;
 }
 
-module.exports = lenOf;
+if (typeof module === "object" && typeof module.exports === "object") {
+    module.exports = lenOf;
+}
